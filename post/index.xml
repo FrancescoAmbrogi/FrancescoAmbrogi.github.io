@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | FA</title>
+    <link>https://FrancescoAmbrogi.github.io/post/</link>
+      <atom:link href="https://FrancescoAmbrogi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://FrancescoAmbrogi.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Posts</title>
+      <link>https://FrancescoAmbrogi.github.io/post/</link>
+    </image>
+    
+    <item>
+      <title>I joined the Turbulence Simulation and Modeling (TSM) Lab</title>
+      <link>https://FrancescoAmbrogi.github.io/post/getting-started/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/post/getting-started/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Within the TSM Lab, my collegues and I study the fascinating problem of Turbulent Flows. I have always been captured by turbulence. Sometimes I found myself staring at the flames in a fireplace wondering how someone can even try to predict the behavior of flames themselves or the motion of smoke and plumes. Working in this group is a wonderful opportunity to satisfy my deep curiosity. Day by day I am unlocking new physical and mathematical features of turbulent flows that make this problem scary and fascinating at the same time.&lt;/p&gt;
+&lt;p&gt;In the following years I will investigate the physics of turbulent boundary layers under the effect of strong pressure gradients.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
