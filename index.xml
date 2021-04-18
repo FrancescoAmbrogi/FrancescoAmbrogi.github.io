@@ -5,12 +5,20 @@
     <link>https://FrancescoAmbrogi.github.io/</link>
       <atom:link href="https://FrancescoAmbrogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>FA</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Francesco Ambrogi</copyright><lastBuildDate>Tue, 23 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Francesco Ambrogi</copyright><lastBuildDate>Sun, 18 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://FrancescoAmbrogi.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>FA</title>
       <link>https://FrancescoAmbrogi.github.io/</link>
     </image>
+    
+    <item>
+      <title>PyN</title>
+      <link>https://FrancescoAmbrogi.github.io/project/pyn/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/project/pyn/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>I delivered a small lecture. &#34;Turbulence, the beauty and the beast&#34;.</title>

@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://FrancescoAmbrogi.github.io/</loc>
+    <lastmod>2021-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://FrancescoAmbrogi.github.io/project/</loc>
+    <lastmod>2021-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://FrancescoAmbrogi.github.io/tag/pyn/</loc>
+    <lastmod>2021-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://FrancescoAmbrogi.github.io/project/pyn/</loc>
+    <lastmod>2021-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://FrancescoAmbrogi.github.io/tags/</loc>
+    <lastmod>2021-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc></loc>
     <lastmod>2021-03-23T00:00:00+00:00</lastmod>
   </url>
@@ -18,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://FrancescoAmbrogi.github.io/</loc>
-    <lastmod>2021-03-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc></loc>
     <lastmod>2021-03-23T00:00:00+00:00</lastmod>
   </url>
@@ -34,11 +54,6 @@
   
   <url>
     <loc>https://FrancescoAmbrogi.github.io/post/</loc>
-    <lastmod>2021-03-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://FrancescoAmbrogi.github.io/tags/</loc>
     <lastmod>2021-03-23T00:00:00+00:00</lastmod>
   </url>
   
