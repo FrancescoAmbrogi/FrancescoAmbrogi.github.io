@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | FA</title>
+    <link>https://FrancescoAmbrogi.github.io/post/</link>
+      <atom:link href="https://FrancescoAmbrogi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://FrancescoAmbrogi.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://FrancescoAmbrogi.github.io/post/</link>
+    </image>
+    
+    <item>
+      <title>I was awarded the 2022 Dean&#39;s Teaching Assistant Award.</title>
+      <link>https://FrancescoAmbrogi.github.io/post/dta_award/</link>
+      <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/post/dta_award/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This means EVERYTHING to me!&lt;/p&gt;
+&lt;p&gt;I have been selected as a recipient of the 2022 Dean&amp;rsquo;s Teaching Assistant (DTA) award by the Department of Mechanical and Materials Engineering at Queen&amp;rsquo;s University. This award recognizes exceptional Teaching Assistants who have been nominated by their departments.&lt;/p&gt;
+&lt;p&gt;I want to extend my profound gratitude to my wife Veronica, who has the courage to stand by my side every single day, to everyone in the Department, including my supervisor &lt;a href=&#34;https://me.queensu.ca/People/Piomelli/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Piomelli&lt;/a&gt; and my fellow colleagues at the &lt;a href=&#34;https://me.queensu.ca/People/Piomelli/TSMLab.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TSM-Lab&lt;/a&gt;, and to every instructor I have had the pleasure to work with.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>I joined How To Change The World program as teaching assistant for the February 2021 edition</title>
+      <link>https://FrancescoAmbrogi.github.io/post/htctw/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/post/htctw/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;On February 2021 I was selected by Queen&amp;rsquo;s University as part of the Teaching Team for the incredible &lt;a href=&#34;https://www.htctw.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;How to Change the World&lt;/a&gt; program. This was my very first experience with HTCTW, an experience I will never forget.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.htctw.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HTCTW&lt;/a&gt; is an educational program to be thought as a Learning Journey. Hundreds of studends from everywhere in the world have the chance to work together in Teams to collaboratively tackle the world&amp;rsquo;s most important challenges as defined by the United Nations.&lt;/p&gt;
+&lt;p&gt;As it is well described in the linkedIn &lt;a href=&#34;https://www.linkedin.com/company/htctw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page&lt;/a&gt;, HTCTW has three main aims:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Expand the availability and increase the accessibility of our learning journey.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support universities and colleges to integrate our experiential learning into their curriculum.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support the growing community of alumni and partners with implementing real change.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I have to say that the pandemic put all of us through a lot of challenges, but it also gave rise to new opportunities. In these 5 days of intense learning experience I have seen students from all over the world, working together in teams, and brainstorming wonderful ideas to tackle the development goals. This has absolutely NO price!!&lt;/p&gt;
+&lt;p&gt;Thank you HTCTW, it was both an honor and a pleasure to be part of the community.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>I joined the Turbulence Simulation and Modelling (TSM) Lab</title>
+      <link>https://FrancescoAmbrogi.github.io/post/tsm_joined/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/post/tsm_joined/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Within the TSM Lab, my collegues and I study the fascinating problem of Turbulent Flows. I have always been captured by turbulence. Sometimes I found myself staring at the flames in a fireplace wondering how someone can even try to predict the behavior of flames themselves or the motion of smoke and plumes. Working in this group is a wonderful opportunity to satisfy my deep curiosity. Day by day I am unlocking new physical and mathematical features of turbulent flows that make this problem scary and fascinating at the same time.&lt;/p&gt;
+&lt;p&gt;In the following years I will investigate the physics of turbulent boundary layers under the effect of strong pressure gradients.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
