@@ -5,12 +5,20 @@
     <link>https://FrancescoAmbrogi.github.io/</link>
       <atom:link href="https://FrancescoAmbrogi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>FA</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 26 Oct 2022 09:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 20 Nov 2022 09:30:00 +0000</lastBuildDate>
     <image>
       <url>https://FrancescoAmbrogi.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>FA</title>
       <link>https://FrancescoAmbrogi.github.io/</link>
     </image>
+    
+    <item>
+      <title>Frequency dependence of unsteady separation in a turbulent boundary layer</title>
+      <link>https://FrancescoAmbrogi.github.io/talk/frequency-dependence-of-unsteady-separation-in-a-turbulent-boundary-layer/</link>
+      <pubDate>Sun, 20 Nov 2022 09:30:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/talk/frequency-dependence-of-unsteady-separation-in-a-turbulent-boundary-layer/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Unsteady separation in a turbulent boundary layer</title>
