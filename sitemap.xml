@@ -4,21 +4,27 @@
   
   
   <url>
+    <loc>https://FrancescoAmbrogi.github.io/courses/</loc><lastmod>2023-05-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://FrancescoAmbrogi.github.io/</loc><lastmod>2023-05-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://FrancescoAmbrogi.github.io/courses/fluidsi/</loc><lastmod>2023-05-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://FrancescoAmbrogi.github.io/tag/previous/</loc><lastmod>2023-05-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://FrancescoAmbrogi.github.io/tags/</loc><lastmod>2023-05-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc></loc><lastmod>2023-04-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://FrancescoAmbrogi.github.io/tag/academic/</loc><lastmod>2023-04-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://FrancescoAmbrogi.github.io/categories/</loc><lastmod>2023-04-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://FrancescoAmbrogi.github.io/</loc><lastmod>2023-04-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc></loc><lastmod>2023-04-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://FrancescoAmbrogi.github.io/post/swa_award/</loc><lastmod>2023-04-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://FrancescoAmbrogi.github.io/post/</loc><lastmod>2023-04-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://FrancescoAmbrogi.github.io/tags/</loc><lastmod>2023-04-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://FrancescoAmbrogi.github.io/category/university/</loc><lastmod>2023-04-10T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -80,4 +86,6 @@
   <url>
     <loc>https://FrancescoAmbrogi.github.io/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://FrancescoAmbrogi.github.io/slides/example/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url></urlset>
+    <loc>https://FrancescoAmbrogi.github.io/slides/example/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://FrancescoAmbrogi.github.io/tag/preface/</loc><changefreq>weekly</changefreq></url></urlset>
