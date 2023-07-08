@@ -5,12 +5,20 @@
     <link>https://FrancescoAmbrogi.github.io/tag/turbulence/</link>
       <atom:link href="https://FrancescoAmbrogi.github.io/tag/turbulence/index.xml" rel="self" type="application/rss+xml" />
     <description>Turbulence</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 20 Nov 2022 09:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 06 Sep 2023 09:30:00 +0000</lastBuildDate>
     <image>
       <url>https://FrancescoAmbrogi.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Turbulence</title>
       <link>https://FrancescoAmbrogi.github.io/tag/turbulence/</link>
     </image>
+    
+    <item>
+      <title>Dynamic of turbulent kinetic energy advection in an unsteady separated turbulent boundary layer</title>
+      <link>https://FrancescoAmbrogi.github.io/talk/dynamic-of-turbulent-kinetic-energy-advection-in-an-unsteady-separated-turbulent-boundary-layer/</link>
+      <pubDate>Wed, 06 Sep 2023 09:30:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/talk/dynamic-of-turbulent-kinetic-energy-advection-in-an-unsteady-separated-turbulent-boundary-layer/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Frequency dependence of unsteady separation in a turbulent boundary layer</title>
