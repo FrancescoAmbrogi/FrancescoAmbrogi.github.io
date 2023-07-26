@@ -5,12 +5,20 @@
     <link>https://FrancescoAmbrogi.github.io/event/</link>
       <atom:link href="https://FrancescoAmbrogi.github.io/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 06 Sep 2023 09:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 19 Nov 2023 09:30:00 +0000</lastBuildDate>
     <image>
       <url>https://FrancescoAmbrogi.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://FrancescoAmbrogi.github.io/event/</link>
     </image>
+    
+    <item>
+      <title>Influence of time-varying freestream conditions on unsteady separation in a turbulent boundary layer</title>
+      <link>https://FrancescoAmbrogi.github.io/talk/influence-of-time-varying-freestream-conditions-on-unsteady-separation-in-a-turbulent-boundary-layer/</link>
+      <pubDate>Sun, 19 Nov 2023 09:30:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/talk/influence-of-time-varying-freestream-conditions-on-unsteady-separation-in-a-turbulent-boundary-layer/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Dynamic of turbulent kinetic energy advection in an unsteady separated turbulent boundary layer</title>
