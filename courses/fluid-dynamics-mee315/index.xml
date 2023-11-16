@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fluid Dynamics - Royal Military College of Canada F23 | FA</title>
+    <link>https://FrancescoAmbrogi.github.io/courses/fluid-dynamics-mee315/</link>
+      <atom:link href="https://FrancescoAmbrogi.github.io/courses/fluid-dynamics-mee315/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fluid Dynamics - Royal Military College of Canada F23</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://FrancescoAmbrogi.github.io/courses/fluid-dynamics-mee315/featured.png</url>
+      <title>Fluid Dynamics - Royal Military College of Canada F23</title>
+      <link>https://FrancescoAmbrogi.github.io/courses/fluid-dynamics-mee315/</link>
+    </image>
+    
+  </channel>
+</rss>
