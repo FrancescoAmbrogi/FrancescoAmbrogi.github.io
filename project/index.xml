@@ -5,12 +5,44 @@
     <link>https://FrancescoAmbrogi.github.io/project/</link>
       <atom:link href="https://FrancescoAmbrogi.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://FrancescoAmbrogi.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://FrancescoAmbrogi.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>ARC4CFD</title>
+      <link>https://FrancescoAmbrogi.github.io/project/arc4cfd/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/project/arc4cfd/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;During the Winter term 2024 I took on this amazing opportunity at the University of Waterloo: develop an open-source, hands-on, completely asynchronous course with the objective to bridge the gap between small sclae CFD simulations and large-scale computations on high-performance computing (HPC) systems.&lt;/p&gt;
+&lt;p&gt;Advanced Research Computing for Computational Fluid Dynamics, or &lt;a href=&#34;https://arc4cfd.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ARC4CFD&lt;/a&gt;, is a 16-hour online, asynchronous course to help learners with a basic understanding of fluid dynamics and CFD bridge the knowledge gap towards the effective utilization of CFD on modern ARC resources.&lt;/p&gt;
+&lt;h2 id=&#34;target-audience&#34;&gt;Target audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;new graduate students in computational physics or engineering&lt;/li&gt;
+&lt;li&gt;experimentalist and theoreticians complementing their work with numerical simulations on HPC&lt;/li&gt;
+&lt;li&gt;undergraduate students on student design teams interested in leveraging CFD on HPC&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The prerequisites for the course are listed &lt;a href=&#34;https://arc4cfd.github.io/prereqs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;learning-outcomes&#34;&gt;Learning outcomes&lt;/h2&gt;
+&lt;p&gt;At the end of this course, the learner should be able to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Define the main concepts in parallel and high performance computing&lt;/li&gt;
+&lt;li&gt;Conduct an a priori estimate of the computational cost of a CFD simulation&lt;/li&gt;
+&lt;li&gt;Explain the impact of modelling assumptions on HPC cost&lt;/li&gt;
+&lt;li&gt;Optimize simulation and parameters of a CFD problem for HPC&lt;/li&gt;
+&lt;li&gt;Develop a research data management strategy for a CFD workflow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;Please cite our manuscript “Advanced Research Computing for Computational Fluid Dynamics (ARC4CFD)”, Hickey et al. (under review).&lt;/p&gt;
+&lt;h2 id=&#34;acknowledgments&#34;&gt;Acknowledgments&lt;/h2&gt;
+&lt;p&gt;This course was developed in the &lt;a href=&#34;https://www.mpilab.ca/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Multi-Physics Interaction Lab&lt;/a&gt; at the University of Waterloo, Canada with the financial support of Compute Ontario. Make sure you check the developers page &lt;a href=&#34;https://arc4cfd.github.io/course_developers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For comments and suggestions, please &lt;a href=&#34;https://arc4cfd.github.io/contact/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>UAPG-TBL Simulation</title>
