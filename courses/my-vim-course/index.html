@@ -315,7 +315,7 @@
     <meta property="twitter:image" content="https://FrancescoAmbrogi.github.io/courses/my-vim-course/featured.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2023-05-13T00:00:00&#43;00:00" />
+      <meta property="og:updated_time" content="2023-01-01T00:00:00&#43;00:00" />
     
   
 
@@ -931,7 +931,7 @@
 <h2 id="why-you-should-use-vim">Why you should use Vim?</h2>
 <p>If you work/study in computational science, chances are you will need to perform numerical simulations on large super-computers by accessing them through <strong>S</strong>ecure <strong>SH</strong>ell connection. Most clusters use Linux as the main operating system and once you are connected to the cluster you will quickly realize that:</p>
 <ol>
-<li>There is NO graphic interface (in most cases), and all you see is a terminal window.</li>
+<li>There is NO graphic interface (in most cases), and all you will see is a terminal window.</li>
 <li>You will not be able to use your favourite text editor in graphic mode.</li>
 </ol>
 <p>Do not dispair! Vim is here to save your life. Vim is, by default, present in almost all Linux distributions. Type <mark>vim</mark> on your command line, and this is the output you should see:</p>
@@ -956,12 +956,12 @@
     <div class="w-100" ><img src="Figures/01_vim_init.png" alt="Typing vim in command line output." loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>The first thing you realize is that the vim welcome message pops up in the terminal itself and that, from now on, you can take your mouse (or trackpad) and throw it in the garbage! You might not see it right now, but this is one of the hidden beauties of Vim.</p>
+<p>The first thing you will realize is that the vim welcome message pops up in the terminal window itself and that, from now on, you can take your mouse (or trackpad) and throw it in the garbage! You might not see it right now, but this is one of the hidden beauties of Vim.</p>
 <h2 id="quitting-vim-not-an-intuitive-task">Quitting Vim, not an intuitive task</h2>
 <p>Everyone who uses Vim on a daily basis has probably done this joke at least once: go to your mother (or best joke buddy), put them in front of an open Vim screen, and ask them a simple question &ldquo;Please, can you quit?&rdquo;. After a few seconds you will see the desperation in their eyes, not knowing what is going on, and 98% of the cases they will end up closing the terminal which will kill the entire process.</p>
 <p>After this fun intro, here is how you quit Vim: press <mark>:q</mark> (colomn followed by q)</p>
 <h2 id="give-vim-a-new-look">Give Vim a new look</h2>
-<p>Right off the bat you might think Vim looks <strong>pretty</strong> boring, especially if compared with recent fancy text editors (e.g. Atom, VS code, etc.). To give you an idea, here is a simple function (witten in Julia) to calculate the volume of a spehere:</p>
+<p>Right off the bat you might think Vim looks <strong>pretty</strong> boring, especially if compared with recent very fancy text editors (e.g. Atom, VS code, etc.). To give you an idea, here is a simple function (witten in Julia) to calculate the volume of a spehere:</p>
 <p>
 
 
@@ -1016,10 +1016,10 @@ set number
 set cursorline
 </code></pre><p>From top to bottom: <strong>nocompatible</strong> fixes compatibility problems between Vi and Vim, <strong>filetype on</strong> makes sure Vim recognizes the file by the extension and syntax, <strong>indent on</strong> follows indentation rules set by the given programming language, <strong>syntax on</strong> highlights keywords and functions based on the given programming language, <strong>set number</strong> put the line number on the left side, and <strong>set cursorline</strong> underlines the location where the cursor is.</p>
 <h2 id="four-vim-modes">Four VIM modes</h2>
-<p>The most important thing to realize as soon as Vim starts up is understand in what <strong>mode</strong> is working. There are 4 MAIN modes:</p>
+<p>The most important thing to realize as soon as Vim starts up is understand in what <strong>mode</strong> is working. There are <strong>4 MAIN</strong> modes:</p>
 <ol>
 <li><strong>Normal</strong>: normal mode is the default start-up mode for Vim. This mode is read-only and you will be unable to edit the file. Very useful when consulting or studying a piece of code.</li>
-<li><strong>Insert</strong>: upon pressing <mark>i</mark> you will enter <strong>insert mode</strong>. In this mode you will be able to freerly edit the file. Two very useful sub-commands are: <mark>a</mark> will turn on instert mode and move the cursor after the current character. <mark>o</mark> will turn on insert mode and move the cursor one line below.</li>
+<li><strong>Insert</strong>: upon pressing <mark>i</mark> you will enter <strong>insert mode</strong>. In this mode you will be able to freerly edit the file. Insert mode can also be activated by pressing <mark>INS</mark> on a full-size keyboard. Two very useful sub-commands are: <mark>a</mark> will turn on instert mode and move the cursor after the current character. <mark>o</mark> will turn on insert mode and move the cursor one line below.</li>
 <li><strong>Visual</strong>: this mode allows you to visually highlight (slect) text areas and perform operation (cut, copy, move) on them. Press <mark>v</mark> to enter visual mode which will mark the beginning of the selection. You can use the arrow keys to highlight the desired text.</li>
 <li><strong>Command line</strong>: this mode will allow you to perform operations such as: quit, save, replace, and search. Enter the command line mode by typing <mark>:</mark> within <strong>normal mode</strong>.</li>
 </ol>
@@ -1095,7 +1095,7 @@ set laststatus=2
 <pre tabindex="0"><code>set incsearch
 set ignorecase
 set hlsearch
-</code></pre><p>This i FAR beyond a complete course on Vim but just a quick showcase of useful commands that may spark your curiosity to use this wonderful tool. Keep checking as I will add more sections soon &hellip;</p>
+</code></pre><p>This is FAR beyond a complete course on Vim text editor, but just a quick showcase of useful commands that may spark your curiosity to use this wonderful tool. Keep checking as I will add more sections soon &hellip;</p>
 
           </div>
 
@@ -1123,7 +1123,7 @@ set hlsearch
         </div>
 
         <div class="body-footer">
-          <p>Last updated on May 13, 2023</p>
+          <p>Last updated on Jan 1, 2023</p>
 
           
 
