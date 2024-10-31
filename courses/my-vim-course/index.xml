@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VIM is awesome | Dr. Ambrogi Francesco</title>
+    <title>VIM is awesome | Dr. Ambrogi</title>
     <link>https://FrancescoAmbrogi.github.io/courses/my-vim-course/</link>
       <atom:link href="https://FrancescoAmbrogi.github.io/courses/my-vim-course/index.xml" rel="self" type="application/rss+xml" />
     <description>VIM is awesome</description>
