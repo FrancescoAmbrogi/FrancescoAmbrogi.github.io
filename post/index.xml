@@ -5,12 +5,36 @@
     <link>https://FrancescoAmbrogi.github.io/post/</link>
       <atom:link href="https://FrancescoAmbrogi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://FrancescoAmbrogi.github.io/media/icon_hu6f17802a8753f91cf448893ebab15783_26243_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
       <link>https://FrancescoAmbrogi.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>The marvel of shark-skin for fluid mechanics</title>
+      <link>https://FrancescoAmbrogi.github.io/post/sharkskin/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://FrancescoAmbrogi.github.io/post/sharkskin/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/a0c0s4K6BTE?si=rB9EK-R9SGDlZ4Zw&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2&gt;About the speakers&lt;/h2&gt;
+&lt;strong&gt;Gianmarco D&#39;Alessandro&lt;/strong&gt;: Gianmarco earned his PhD from Queen&#39;s University where he worked as a graduate research assistant in Prof. Piomelli&#39;s group. Gianmarco then moved to Vietnam where he is a lecturer at RMIT university.
+&lt;h2&gt;The marvel of sharks&lt;/h2&gt;
+&lt;p&gt;Sharks have been around for millions of years, and if there is something that Nature does extremely well, is optimize its creature to thrive in their respective environment. Sharks are no exceptions: they have evolved to be incredible swimmers, fearless predators, and have developed on their skin something known as &lt;em&gt;dermal denticles&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;For over four decades scientists have tried to explain why shark-skin denticles have evolved to that particular geometry, and the reason might just be &lt;strong&gt;hydrodynamics&lt;/strong&gt;. After a brief introduction, in the video we go over the following topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Drag force in fluid mechanics.&lt;/li&gt;
+&lt;li&gt;Shark skin Vs Riblets: differences and similarities.&lt;/li&gt;
+&lt;li&gt;Shark skin for viscous drag reduction.&lt;/li&gt;
+&lt;li&gt;Shark skin for form drag reduction.&lt;/li&gt;
+&lt;li&gt;Shark skin inspired aerospace technologies.&lt;/li&gt;
+&lt;li&gt;Impact of shark skin in aerospace.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Subscribe to &lt;a href=&#34;https://youtube.com/@ambrogifra-fluids?si=lvt06ca38VYxoyze&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my YouTube channel&lt;/a&gt; and stay tuned for more content like this.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Joining Queen&#39;s as an assistant professor</title>
