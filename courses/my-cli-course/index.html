@@ -1,0 +1,1741 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Dr. Ambrogi Francesco" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="An introductory course on command line interface" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://FrancescoAmbrogi.github.io/courses/my-cli-course/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+    <link rel="alternate" href="/courses/my-cli-course/index.xml" type="application/rss+xml" title="Dr. Ambrogi" />
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu6f17802a8753f91cf448893ebab15783_26243_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu6f17802a8753f91cf448893ebab15783_26243_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://FrancescoAmbrogi.github.io/courses/my-cli-course/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+    <meta property="twitter:site" content="@fAmbrogiEng" />
+    <meta property="twitter:creator" content="@fAmbrogiEng" />
+  
+  <meta property="og:site_name" content="Dr. Ambrogi" />
+  <meta property="og:url" content="https://FrancescoAmbrogi.github.io/courses/my-cli-course/" />
+  <meta property="og:title" content="Introduction to Command Line Interface | Dr. Ambrogi" />
+  <meta property="og:description" content="An introductory course on command line interface" /><meta property="og:image" content="https://FrancescoAmbrogi.github.io/courses/my-cli-course/featured.png" />
+    <meta property="twitter:image" content="https://FrancescoAmbrogi.github.io/courses/my-cli-course/featured.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2025-04-01T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <title>Introduction to Command Line Interface | Dr. Ambrogi</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="dd7e2431dd5d12b51950f55efe22c960" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Dr. Ambrogi</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Dr. Ambrogi</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/courses/"><span>Teaching</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/uploads/Ambrogi_Francesco_CV.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Courses
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i>Courses</a></li>
+      </ul>
+
+      
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link  active" href="/courses/my-cli-course/">Learn CLI tools</a>
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-linux">What is Linux?</a></li>
+    <li><a href="#basic-unix-concepts">Basic UNIX concepts?</a></li>
+    <li><a href="#the-shell">The SHELL</a></li>
+    <li><a href="#how-do-i-follow-this-course">How do I follow this course?</a></li>
+    <li><a href="#basic-shell-commands">Basic SHELL commands</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#installing-new-commands">Installing new commands</a></li>
+    <li><a href="#homework">Homework</a></li>
+    <li><a href="#managing-files-and-directories">Managing files and directories</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#file-editing-in-cli">File editing in CLI</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#io-redirection">I/O redirection</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#bash-scripting">Bash scripting</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Introduction to Command Line Interface</h1>
+
+          <div class="article-style">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /courses/my-cli-course/featured_hu49baa0436f2d964a6b0cb3a7f0006a7b_2050_fb5f0a44622b15fb911249d09e0e520b.webp 400w,
+               /courses/my-cli-course/featured_hu49baa0436f2d964a6b0cb3a7f0006a7b_2050_cb56a6251c96c8eb3db7878f495e7113.webp 760w,
+               /courses/my-cli-course/featured_hu49baa0436f2d964a6b0cb3a7f0006a7b_2050_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/courses/my-cli-course/featured_hu49baa0436f2d964a6b0cb3a7f0006a7b_2050_fb5f0a44622b15fb911249d09e0e520b.webp"
+               width="200"
+               height="200"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<details class="toc-inpage d-print-none d-xl-none " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-linux">What is Linux?</a></li>
+    <li><a href="#basic-unix-concepts">Basic UNIX concepts?</a></li>
+    <li><a href="#the-shell">The SHELL</a></li>
+    <li><a href="#how-do-i-follow-this-course">How do I follow this course?</a></li>
+    <li><a href="#basic-shell-commands">Basic SHELL commands</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#installing-new-commands">Installing new commands</a></li>
+    <li><a href="#homework">Homework</a></li>
+    <li><a href="#managing-files-and-directories">Managing files and directories</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#file-editing-in-cli">File editing in CLI</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#io-redirection">I/O redirection</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#bash-scripting">Bash scripting</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</details>
+
+<h2 id="what-is-linux">What is Linux?</h2>
+<p>Linux is an operating system that evolved from a <strong>kernel</strong> created by <a href="https://www.linux.org/threads/what-is-linux.4106/" target="_blank" rel="noopener">Linus Torvalds</a>. It evolved from an old UNIX system, but it is important to remember that:</p>
+<ol>
+<li>Linux <strong>is not</strong> a program</li>
+<li>Linux <strong>is an interface</strong> between computer/server hardware and the programs that run on it.</li>
+</ol>
+<p>People would often say <em>Linux is just a kernel</em>, but it turns out that a <strong>kernel</strong> is the focal point of any OS. A kernel is literally what tells the big chip what to do with the programs you are using. To make a relatively appealing example, think of a nice plate of <strong>pappardelle with wild boar ragu</strong> (a typical dish from my home region in Italy). If the <strong>dish</strong> itself is the operating system, the <strong>ingredients</strong> (tomato sauce, meat, persley, etc) are the programs that run on it, and the <strong>pasta</strong> is the kernel. Without <strong>pasta</strong> the dish completely loses its significance, no matter the quantity of programs that run on it.</p>
+<p><strong>Why you should use Linux today?</strong></p>
+<p>Below I will give you my reasons as to why you should consider using Linux. This is beyond being and exhaustive list of reasons, or an absolute list of reasons.</p>
+<ol>
+<li>Linux is <strong>FREE</strong> and <strong>OPEN-SOURCE</strong>. You can easily look at its source code, and if you are crazy enough even attempt to mdify it. The open-source characteristic is probably the most beautiful aspect, as over the years, people have contributed to its development. You now have gazillion Linux distributions which you can try and choose from, but most importantly, you have a massive community behind Linux ready to help when you have a problem.</li>
+<li><strong>AMAZING</strong> software mamagement through packages. You can update your systems and your applications <strong>WHENEVER</strong> you feel like it (unlike other OSs).</li>
+<li>Linux is <strong>stable</strong>, very <strong>light</strong>, and <strong>reliable</strong>. This is the reason why it is the first choice as OS in Internet Servers, Cloud systems, and Clusters.</li>
+<li>Linux is <strong>safe</strong> and <strong>transparent</strong>. Due to its large community-based developments at its back, Linux is probably the safest OS in terms of malwares and attacks. This does not mean that it is immune!</li>
+</ol>
+<p><strong>Why you should not use Linux?</strong></p>
+<ol>
+<li>Linux <strong>IS NOT</strong> very user friendly and it can be confusing for non-tech savy people. The learning curve might be steep at first.</li>
+<li>Linux has small peripheral hardware drivers compared to windows. If you are a hard-core gamer, Linux is probably not your choice (yet &hellip;).</li>
+<li>If you use Linux regularly you might run into compatibility issues with commonly used programs in corparate offices or companies (MS Word, MS excel, etc).</li>
+</ol>
+<h2 id="basic-unix-concepts">Basic UNIX concepts?</h2>
+<p>It is important, before we dive into the <strong>command line</strong>, to clarify a few important UNIX concepts:</p>
+<ol>
+<li><strong>File</strong>: data stored in a standard format that behaves in a certain way depending on its function in the system. In Linux (UNIX in general) everything is a file.</li>
+<li><strong>Program</strong>: a file that can be executed (run).</li>
+<li><strong>Process</strong>: a program that is being executed.</li>
+<li><strong>Ownership</strong>: in UNIX sytems files/programs/processes are owned by a user and a group.</li>
+<li><strong>Hierarchical directory structure</strong>: files are organized in <strong>directories</strong> (you would call them folders) that can have a parent or children. Example: in the path /home/user/sim1/run.sh the file named <em>run.sh</em> is contained in the directory <mark>sim1</mark> and <mark>user</mark> is its parent directory.</li>
+</ol>
+<p><span style="color:red">Managing your files and processes in an organized way is a crucial step in the correct utilization of the system.</span></p>
+<h2 id="the-shell">The SHELL</h2>
+<p>The <strong>shell</strong> is a program that takes (interpret) commands from the keyboard and gives them to the OS to perform. The shell is a comand line interface (CLI), and it will be the main focus of this short course. The shell provides:</p>
+<ol>
+<li>Built-in commands.</li>
+<li>Programming control structures.</li>
+<li>Environment variables.</li>
+</ol>
+<p>Linux supports several shell programs, but the default is usually <strong>BASH</strong> (<a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener">Bourne Again SHell</a>).</p>
+<p>The <strong>Terminal</strong> is a program called a terminal emulator. This is a program that opens a window and lets you interact with the shell. Once again, there are several terminal emulators supported by Linux systems: gnome-terminal, konsole, xterm, nxterm, and eterm.</p>
+<p>The <strong>Prompt</strong> is that first line that pops up when you first open a terminal application. It is very informative, and it might look something like this:</p>
+<pre tabindex="0"><code>francesco@rafaela : (~) -&gt;
+</code></pre><p>This is the prompt of my own device, and most likely yours will look different, but here is what the prompt is telling us (or me in this case):</p>
+<ul>
+<li><strong>Username</strong>: francesco</li>
+<li><strong>System/computer name</strong>: rafaela</li>
+<li><strong>Current working directory</strong> (~). In Linux the symbol <mark> ~ </mark> is a shorthand for HOME directory.</li>
+<li><strong>Blinking cursor</strong>: the terminal is always waiting for the user input. It usually displays a blinking cursor.</li>
+</ul>
+<p>The basic syntax to give commands to the Shell is the following:</p>
+<pre tabindex="0"><code>command [OPTIONS] argument(s)
+</code></pre><ul>
+<li><strong>command</strong>: is the keyword that identifies the specific command you are trying to run.</li>
+<li><strong>[OPTIONS]</strong>: optional, they add more specifics to the command you are running.</li>
+<li><strong>argument(s)</strong>: are the argument(s) required by the command to run.</li>
+</ul>
+<h2 id="how-do-i-follow-this-course">How do I follow this course?</h2>
+<p>The best thing you can do is open a terminal window and follow along by running every command as we learn them. This course does not require any prerequisite knowledge. To make sure you are using the same terminal application I am using:</p>
+<ol>
+<li><strong>Linux users</strong>: there is nothing you should do.</li>
+<li><strong>MAC OS users</strong>: run the following command:</li>
+</ol>
+<pre tabindex="0"><code>exec bash -l
+</code></pre><p>For a temporary swith to <strong>bash</strong>. If you want to use bash as your permanent shell, you can run:</p>
+<pre tabindex="0"><code>chsh -s /bin/bash
+</code></pre><ol start="3">
+<li><strong>Windows users</strong>: you have several options. The most common is probably <a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank" rel="noopener">Windows Subsystem Linux (WSL)</a>. You can also install <a href="https://mobaxterm.mobatek.net/" target="_blank" rel="noopener">MobaXterm</a> which is an enhanced terminal for Windows with X11 server, tabbed SSH client, network tools and much more.</li>
+</ol>
+<h2 id="basic-shell-commands">Basic SHELL commands</h2>
+<h4 id="print-working-directory-pwd">Print Working Directory (PWD)</h4>
+<p>In Linux the directory you are currently in is called the working directory. When using the shell, it is very easy to get lost and the <mark>pwd</mark> command will be your compass.</p>
+<pre tabindex="0"><code>francesco@rafaela : (Teaching) -&gt; pwd
+/Users/francesco/QueensU/Teaching
+francesco@rafaela : (Teaching) -&gt; 
+</code></pre><p>When we first log into our Linux system, the working directory is set to our home directory (~). This is where we put our files. In most systems, the home directory will be called <mark>/home/username</mark>, but it can be anything according to the wishes of the system administrator.</p>
+<h4 id="list-directory-content-ls">List directory content (LS)</h4>
+<p>In Linux, to list the content of a directory, we use the command <mark> ls </mark>. The syntax is the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ls <span class="o">[</span>option<span class="o">]</span> <span class="o">[</span>directory<span class="o">]</span>
+</span></span></code></pre></div><p>By running the <mark> ls </mark> command as is in the previous example, I get:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Teaching<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">00_EXTRAS  02_MREN241 04_MECH330 06_MREN230
+</span></span><span class="line"><span class="cl">01_MECH241 03_MECH398 05_MECH444 07_APSC103
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Teaching<span class="o">)</span> -&gt; 
+</span></span></code></pre></div><p>Which tells me that insite the directory named <mark>teaching</mark> there are 8 direcories numbered from 00 to 07 conatining information on all the courses I have taught throughout these years at Queen&rsquo;s University. Take a very good look at the naming convention I use for my files. It is probably not the best (for some) but the most important detail I want your attention on is that <strong>there are NO spaces in the name</strong>.</p>
+<p>Common options of the <mark>ls</mark> commands are:</p>
+<ul>
+<li><strong>ls -l</strong>: list the files in a directory with extended information.</li>
+<li><strong>ls -a</strong>: list all files, including hidden files (files with names starting with a dot, for example .bashrc).</li>
+</ul>
+<h4 id="change-directory-cd">Change directory (CD)</h4>
+<p>In Linux, to move around directories (change) we use the command change directory or <mark>cd</mark>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> pathToDirectory
+</span></span></code></pre></div><p>In the example before, if I want to get inside <mark>01_MECH241</mark> I would type:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Teaching<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">00_EXTRAS  02_MREN241 04_MECH330 06_MREN230                                                     
+</span></span><span class="line"><span class="cl">01_MECH241 03_MECH398 05_MECH444 07_APSC103
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Teaching<span class="o">)</span> -&gt; <span class="nb">cd</span> 01_MECH241/
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>01_MECH241<span class="o">)</span> -&gt; <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">/Users/francesco/QueensU/Teaching/01_MECH241
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>01_MECH241<span class="o">)</span> -&gt; 
+</span></span></code></pre></div><p>You would notice that the prompt has changed, and from (Teaching) it is telling me that I am now in (01_MECH241), and if I run <mark>pwd</mark> it would show me the full path. One of the beautiful aspect of using the CLI to move around directories is that I do not have to be in the parent directory to move inside my destination, but I only need to know the <strong>absolute path</strong>. In the example before, I could go in any location (for example Desktop), and go back to <mark>01_MECH241</mark> with one simple command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; <span class="nb">cd</span> /Users/francesco/QueensU/Teaching/01_MECH241
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>01_MECH241<span class="o">)</span> -&gt; 
+</span></span></code></pre></div><p>Using the mouse or trackpad, this would have cost me at least 5 clicks. The notation <mark> . </mark>  refers to the working directory itself, and the notation <mark> .. </mark>  refers to the working directory&rsquo;s parent directory. By yourself try the following commands and analyze the output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> .
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ..
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ../../
+</span></span></code></pre></div><h4 id="create-a-file-using-touch">Create a file using TOUCH</h4>
+<p>In the shell, if you want to create a file (remember what a file is!) you can use the command <mark>touch</mark>. This command creates a file without opening it, and without adding anything in it. The syntax is the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">touch file_name
+</span></span></code></pre></div><p>If I want to create a .txt file for instance, I would type:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">touch myFile.txt
+</span></span></code></pre></div><p>And if I use my preferred text editor (<a href="https://francescoambrogi.github.io/courses/my-vim-course/" target="_blank" rel="noopener">check out my course on VIM</a>) to open it, I would see that the file is indeed empty.</p>
+<p><span style="color:red">Danger !!!</span> The name you choose for your files is VERY important in a UNIX system:</p>
+<ul>
+<li>File names that begin with a period character are hidden. This only means that ls will not list them unless we say ls -a.</li>
+<li>File names in Linux, like Unix, are case-sensitive. The file names &ldquo;File1&rdquo; and &ldquo;file1&rdquo; refer to different files.</li>
+<li><strong>Do not</strong> embed spaces in file names. If you want to represent spaces between words in a file name, use underscore characters. You will thank me later.</li>
+</ul>
+<h4 id="create-a-new-directory-using-mkdir">Create a new directory using MKDIR</h4>
+<p>In the shell, if you want to create a new directory (remember what a directory is!) you can use the command <mark>mkdir</mark>. This command creates a new directory in the specified location with nothing in it. The syntax is the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir fullPathToDirectoryName
+</span></span></code></pre></div><p><strong>TASK</strong>: from my desktop I want to create a new directory in <mark>Teaching</mark> named <mark>08_CLI</mark>. I would type the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; mkdir ~/QueensU/Teaching/08_CLI
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls ~/QueensU/Teaching/
+</span></span><span class="line"><span class="cl">00_EXTRAS  02_MREN241 04_MECH330 06_MREN230                                                     
+</span></span><span class="line"><span class="cl">01_MECH241 03_MECH398 05_MECH444 07_APSC103 08_CLI
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; 
+</span></span></code></pre></div><p>Notice that I have <strong>created</strong> the dirctory and <strong>listed</strong> the directory content without leaving the original location. This is another very important aspect of using the CLI.</p>
+<h4 id="a-very-important-man">A very important MAN</h4>
+<p>The <mark>man</mark> command, short for manual, is a powerful tool in the Linux operating system that allows users to access detailed information about various commands, utilities, and system calls. Just like any other shell command the syntax for the man command is:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">man <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="nb">command</span>
+</span></span></code></pre></div><p>Manual pages pop up in the terminal itself, and can be quite overwhelming. They are, however, a GREAT resource! Here is how to navigate them:</p>
+<ul>
+<li><strong>Spacebar</strong>: move forward one page.</li>
+<li><strong>Enter</strong>: move forward one line.</li>
+<li><strong>B</strong>: move backward one page.</li>
+<li><strong>Q</strong>: quit the manual viewer.</li>
+</ul>
+<h2 id="installing-new-commands">Installing new commands</h2>
+<p>In Linux is very easy to get lost, especially if one is used to a GUI. The <mark>tree</mark> command is a recursive directory listing program that produces a depth-indented listing of files. With no arguments, the tree lists the files in the current directory. You can install <mark>tree</mark> by running:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install tree
+</span></span></code></pre></div><p>The installation command might change based on the Linux distribution you use. The above command can be used in debian based (Ubuntu, Pop OS, etc) Linux distributions. Please refer to the the specific documentation page for more information.</p>
+<p>If I use the <mark>tree</mark> command on my Desktop directory, the output will be the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; tree
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">└── myFile.txt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">1</span> directory, <span class="m">1</span> file
+</span></span></code></pre></div><p>In <strong>Desktop</strong> there is only one file named myFile.txt which we have just created.</p>
+<h2 id="homework">Homework</h2>
+<p>Open a new terminal window and perform the following:</p>
+<ol>
+<li>Go to your HOME directory.</li>
+<li>Create a new directory called &ldquo;intro_shell&rdquo;</li>
+<li>Move into the new directory.</li>
+<li>Create an empty .txt file called &ldquo;my_first_file.txt&rdquo;</li>
+<li>List the content of your new directory.</li>
+</ol>
+<h2 id="managing-files-and-directories">Managing files and directories</h2>
+<p>It will come a day when you will have to do some <strong>bookkeeping</strong> or general <strong>organizing</strong> or your directories, and the following commands will come very handy.</p>
+<h4 id="the-move-mv-command">The move (MV) command</h4>
+<p><mark>mv</mark> is very powerful command and it stands for &ldquo;move&rdquo;. Think of it as your digital moving van, able to perform the following tasks:</p>
+<ul>
+<li>Rename files.</li>
+<li>Move files from one place to another.</li>
+<li>Tidy up your directories.</li>
+</ul>
+<p>The basic syntax for the <mark>mv</mark> command is:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mv <span class="o">[</span>OPTIONS<span class="o">]</span> source_file<span class="o">(</span>s<span class="o">)</span> destination_file<span class="o">(</span>s<span class="o">)</span>
+</span></span></code></pre></div><p>Where <strong>source_file(s)</strong> is the name of the files we want to rename or move, and <strong>destination_file(s)</strong> is the name of the destination directory or new file name.</p>
+<p>To make an example on how to use <mark>mv</mark> let&rsquo;s create a couple of random files (file1.txt, and file2.txt) and a directory (my_dir) in our Desktop. This is what you should see after running <mark>ls</mark>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">file1.txt  file2.txt  my_dir.txt
+</span></span></code></pre></div><p>Now try to run the following commands and analyze the output:</p>
+<details class="spoiler "  id="spoiler-2">
+  <summary>mv file1.txt 01_file1.txt</summary>
+  <p><p>The command has renamed file1.txt. This is now the output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">01_file1.txt file2.txt    my_dir.txt
+</span></span></code></pre></div></p>
+</details>
+<details class="spoiler "  id="spoiler-3">
+  <summary>mv file2.txt 02_file2.txt</summary>
+  <p><p>The command has renamed file2.txt. This is now the output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">01_file1.txt 02_file2.txt    my_dir.txt
+</span></span></code></pre></div></p>
+</details>
+<details class="spoiler "  id="spoiler-4">
+  <summary>mv 0* ./my_dir/</summary>
+  <p><p>We now moved EVERY file that begins with 0 into my_dir:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">01_file1.txt 02_file2.txt my_dir
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; mv 0* ./my_dir/
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">my_dir
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls my_dir/
+</span></span><span class="line"><span class="cl">01_file1.txt 02_file2.txt
+</span></span></code></pre></div></p>
+</details>
+<details class="spoiler "  id="spoiler-5">
+  <summary>mv my_dir 01_my_dir</summary>
+  <p><p>This command will rename the directory my_dir, but it will not alter the files inside:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">my_dir
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; mv my_dir 01_mydir
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">01_mydir
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls 01_mydir/
+</span></span><span class="line"><span class="cl">01_file1.txt 02_file2.txt
+</span></span></code></pre></div></p>
+</details>
+<h4 id="wild-cards">Wild cards</h4>
+<p>You may have noticed in one of the previous commands that we used the * to give a very specific instruction to the shell: <em>every file beginning with 0</em>. Commands can use <strong>wildcards</strong> to perform actions on more than one file at a time, or to <strong>find patterns</strong> in a text file. Below are a few very important wildcards you might want to remember:</p>
+<ul>
+<li>The asterisk: this can represent any number of characters (including zero, in other words, zero or more characters). For instance, to list all files ending with the extension .pdf, we could write:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ls *.pdf
+</span></span></code></pre></div><ul>
+<li>Question mark ?: this can represent any single character. Example: <mark>ls file?.txt</mark> will list <strong>ONLY</strong> file1.txt and file2.txt</li>
+<li>Square brackets []: unlike the previous 2 which specify ANY character, [] lets you specify the range of characters. Example <mark> ls [fm]* </mark> will list ALL files beginning with f OR m.</li>
+</ul>
+<h4 id="the-copy-cp-command">The copy (CP) command</h4>
+<p>In Linux we use <mark>cp</mark> to copy files. The syntax, as usual, is:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp <span class="o">[</span>OPTIONS<span class="o">]</span> source_file destination_file
+</span></span></code></pre></div><p>A couple of important options:</p>
+<ul>
+<li><strong>-i</strong> (interactive): this command will copy with a <strong>warning</strong> before overwriting the destination file.</li>
+<li><strong>-r</strong> or <strong>-R</strong> (recursive): this will copy the directory structure recursively.</li>
+<li><strong>-p</strong> (preserve): this will copy while <strong>preserving</strong> file characteristics (creation date, access time, ownership, etc.)</li>
+</ul>
+<h4 id="heavy-duty-copy-scp-and-rsync">Heavy duty copy (SCP and RSYNC)</h4>
+<p>The <mark>cp</mark> is good for copying small amount of data, but CFD simulations (as some will learn!) can generate TB of data in just a couple of simulations. Moreover, results might be <strong>sensitive</strong>. If that&rsquo;s the case, your options are:</p>
+<ul>
+<li><strong>scp</strong>: the very important feature of the secure copy protocol <mark>scp</mark> is that all files and passwords that are being transferred are encrypted. <mark>scp</mark> is therefore highly recommended when dealing with sensitive or proprietary data.</li>
+<li><strong>rsync</strong>: the remote sync or simply <mark>rsync</mark> is a command line, remote and local file synchronization tool. <mark>rsync</mark> is very fast and the most important feature is that it uses an algorithm that minimizes the amount of data copied by <strong>only moving the portion of files that are different between the source directory and the destination directory</strong>. Therefore, <mark>rsync</mark> is extremely useful for a periodic backup of data.</li>
+</ul>
+<h4 id="the-remove-rm-command">The remove (RM) command</h4>
+<p>In Linux we use RM to remove files. The syntax, as usual, is:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rm <span class="o">[</span>OPTIONS<span class="o">]</span> file_name<span class="o">(</span>s<span class="o">)</span>
+</span></span></code></pre></div><p><span style="color:red"><strong>DANGER: Linux DOES NOT have a recycle bin!!!</strong></span></p>
+<p>A couple of important options:</p>
+<ul>
+<li><strong>-i</strong> (interactive): this command ensures that before anything is deleted it needs to be confirmed.</li>
+<li><strong>-f</strong> (force): this will force the file(s) to be deleted. <strong>You should generally AVOID this option, especially at the beginning</strong>.</li>
+<li><strong>-r</strong> (recursive): along with the current directory, this command will delete all subdirectories and files within it.</li>
+<li><strong>-v</strong> (verbose): this will show on terminal what the command is currently doing.</li>
+</ul>
+<h4 id="the-find-command">The FIND command</h4>
+<p>It will come a day when you will have several thousands of files, especially those of you who will run heavy numerical simulations. The <mark>find</mark> command is a very powerful tool that will help you navigate and <strong>search</strong> what you are looking for. Its adaptability allows users to search by name, size, modification time, or content, providing a flexible and potent solution.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find <span class="o">[</span>path<span class="o">]</span> <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>expression<span class="o">]</span>
+</span></span></code></pre></div><p>Example: what do you think the output of the following command will be?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find ./01_mydir/ -type f -name <span class="s2">&#34;*.txt&#34;</span>
+</span></span></code></pre></div><details class="spoiler "  id="spoiler-6">
+  <summary>Click the arrow to display.</summary>
+  <p><p>The command has looked inside the directory 01_mydir for files ending with .txt extension. As expected it has found the following files:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; find ./01_mydir/ -type f -name <span class="s2">&#34;*.txt&#34;</span>
+</span></span><span class="line"><span class="cl">./01_mydir/01_file1.txt
+</span></span><span class="line"><span class="cl">./01_mydir/02_file2.txt
+</span></span></code></pre></div></p>
+</details>
+<h2 id="file-editing-in-cli">File editing in CLI</h2>
+<h4 id="open-text-files-in-cli">Open text files in CLI</h4>
+<p>When using Linux, in many cases, you will not have a graphical user interface (GUI), e.g. when you are connected to a computer cluster or server. <strong>Your very nice graphical text editors (VScode, Atom, Gedit, &hellip;) won&rsquo;t work!</strong>. Linux offers a selection of commands and tools to visualize and edit text files directly on the terminal window.</p>
+<h4 id="nano-text-editor">NANO text editor</h4>
+<p>On my website you will find <a href="https://francescoambrogi.github.io/courses/my-vim-course/" target="_blank" rel="noopener">a short course on VIM text editor</a> (check it out!). Here we will use a more intuitive (for beginners) command line text editor called <strong>NANO</strong>. Nano comes by default with most linux, mac os distributions and is an easy-to-use command line text editor for Unix and Linux operating systems. It includes all the basic functionalities, like syntax highlighting, multiple buffers, search and replace with regular expression support, spellchecking, UTF-8 encoding, and more. To open a text file in NANO you would just type:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano file_name
+</span></span></code></pre></div><p>You will notice that the editor pops up on the terminal window itself which now looks very diffent. The great thing about NANO is that you can intuitively modify the file as you would do on a regular GUI application, and it tells you the most useful commands at the very bottom.</p>
+<p>Let&rsquo;s open one of the .txt we created earlier, and let&rsquo;s add some text to it. The NANO commands you will use the most in this course are:</p>
+<ul>
+<li><strong>ctrl+O</strong>: this will save whatever text you&rsquo;ve written but leave the file open.</li>
+<li><strong>Directional arrows</strong>: to move around the file just like a regular document.</li>
+<li><strong>ctrl+X</strong>: to close the file after the modifications have been saved.</li>
+</ul>
+<h4 id="the-cat-command">The CAT command</h4>
+<p>A quick way to preview the contents of a text file without having to open the file in a large application, is to use the <mark>cat</mark> command. The <mark>cat</mark> command on Linux <strong>concatenates files together</strong>. I have modified the 01_file1.txt file to contain the following text &ldquo;Ciao Francesco! Come stai?&rdquo;. Let&rsquo;s see what the output of the command <mark>cat</mark> is by typing the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; cat 01_mydir/01_file1.txt 
+</span></span><span class="line"><span class="cl">Ciao Francesco!
+</span></span><span class="line"><span class="cl">Come stai?
+</span></span></code></pre></div><p>As expected the <mark>cat</mark> command displayed the content of the file on terminal.</p>
+<h4 id="the-head-and-tail-commands">The HEAD and TAIL commands</h4>
+<p>CAT is not the only way of efficiently visualizing text files. Sometimes we may only be interested in the BEGINNING of the text file, or in the very last lines. The <mark>head</mark> and <mark>tail</mark> commands will help in this scenario. Let&rsquo;s test them on the <strong>U velocity</strong> file below. This file comes from OpenFOAM and contains information of the streamwise velocity of a fluid flow.</p>
+<details class="spoiler "  id="spoiler-7">
+  <summary>U velocity file</summary>
+  <p><pre tabindex="0"><code>/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       volVectorField;
+    location    &#34;284&#34;;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   nonuniform List&lt;vector&gt; 
+12225
+(
+(9.85699 -0.886638 0)
+(9.6663 -0.740719 0)
+(9.4558 -0.429422 0)
+(9.22455 -0.222148 0)
+(9.00655 -0.106401 0)
+(8.81446 -0.0458208 0)
+(8.64763 -0.0151314 0)
+(8.50547 0.000482775 0)
+(8.38388 0.00840827 0)
+(8.28118 0.012291 0)
+(8.19288 0.0139857 0)
+(8.11682 0.0149794 0)
+(8.05025 0.0153808 0)
+(7.99149 0.0155227 0)
+(7.9386 0.0155396 0)
+(7.89277 0.0152954 0)
+(7.84013 0.0174052 0)
+(7.83115 0.00995634 0)
+(10.0545 0.227708 0)
+(10.1213 0.326964 0)
+(10.1196 0.26165 0)
+(10.0856 0.18659 0)
+(10.0435 0.134693 0)
+(9.99677 0.101128 0)
+(9.94406 0.0792866 0)
+(9.88535 0.0645604 0)
+(9.82403 0.0542457 0)
+(9.76156 0.0466493 0)
+(9.70015 0.040872 0)
+(9.64041 0.0363031 0)
+(9.58321 0.0326114 0)
+(9.52893 0.0297136 0)
+(9.47729 0.0271588 0)
+(9.42985 0.0261196 0)
+(9.38265 0.0227973 0)
+(9.34781 0.0310605 0)
+(10.0035 0.0581547 0)
+(10.0305 0.0559486 0)
+(10.056 0.0337727 0)
+(10.0704 0.0328834 0)
+(10.077 0.0406302 0)
+(10.0779 0.0465251 0)
+(10.0726 0.049336 0)
+(10.0615 0.0502761 0)
+(10.0463 0.0501663 0)
+(10.0279 0.0494429 0)
+(10.0074 0.0483852 0)
+(9.9853 0.0472005 0)
+(9.96226 0.0459876 0)
+(9.93874 0.0448711 0)
+(9.915 0.0437403 0)
+(9.89178 0.0431441 0)
+(9.86875 0.0420455 0)
+(9.8471 0.0435137 0)
+(9.99772 0.0109483 0)
+(10.0111 0.0266177 0)
+(10.035 0.0371192 0)
+(10.0525 0.0480611 0)
+(10.0644 0.0554282 0)
+(10.0735 0.0581581 0)
+(10.0796 0.0583233 0)
+(10.0825 0.0575749 0)
+(10.0829 0.0565168 0)
+(10.0814 0.0553087 0)
+(10.0784 0.0540191 0)
+(10.0741 0.0527649 0)
+(10.0688 0.0515394 0)
+(10.0628 0.0504341 0)
+(10.0561 0.0493478 0)
+(10.0494 0.0486187 0)
+(10.0424 0.047629 0)
+(10.0355 0.0474476 0)
+(9.99935 0.00709953 0)
+(10.009 0.0316925 0)
+</code></pre></p>
+</details>
+<ul>
+<li><strong>head -n filename</strong>: this command will show on terminal only the first <strong>n</strong> lines of the file. By default <strong>n</strong> is equal to 10.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; head -15 u_velocity 
+</span></span><span class="line"><span class="cl">/*--------------------------------*- C++ -*----------------------------------*<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  <span class="o">=========</span>                 <span class="p">|</span>
+</span></span><span class="line"><span class="cl">  <span class="se">\\</span>      /  F ield         <span class="p">|</span> OpenFOAM: The Open Source CFD Toolbox
+</span></span><span class="line"><span class="cl">   <span class="se">\\</span>    /   O peration     <span class="p">|</span> Website:  https://openfoam.org
+</span></span><span class="line"><span class="cl">    <span class="se">\\</span>  /    A nd           <span class="p">|</span> Version:  <span class="m">12</span>
+</span></span><span class="line"><span class="cl">     <span class="se">\\</span>/     M anipulation  <span class="p">|</span>
+</span></span><span class="line"><span class="cl"><span class="se">\*</span>---------------------------------------------------------------------------*/
+</span></span><span class="line"><span class="cl">FoamFile
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    format      ascii<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    class       volVectorField<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    location    <span class="s2">&#34;284&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    object      U<span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+</span></span></code></pre></div><ul>
+<li><strong>tail -n filename</strong>: this command will show on terminal the last <strong>n</strong> lines of the file. By default <strong>n</strong> is equal to 10.</li>
+</ul>
+<h4 id="even-better-the-less-command">Even better the LESS command</h4>
+<p>The <mark>less</mark> command is a Linux terminal pager that shows a file’s content one screen at a time. It is useful when dealing with large text files because it does not load the entire file but accesses it page by page, resulting in fast loading speeds.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">less <span class="o">[</span>OPTIONS<span class="o">]</span> filename
+</span></span></code></pre></div><p>Useful options of the less command are:</p>
+<ul>
+<li><strong>-E</strong>: less automatically exits after reaching the end of the file.</li>
+<li><strong>-N</strong>: less displays line numbers at the beginning of each line.</li>
+<li><strong>-help</strong>: gives a complete list of options available.</li>
+</ul>
+<h4 id="the-grep-command">The GREP command</h4>
+<p>Probably one of the most useful command in the shell, the <mark>GREP</mark> command is used for searching and manipulating text patterns within files. <mark>grep</mark> is widely used by programmers, system administrators, and users alike for its efficiency and versatility in handling text data. The basic syntax of the <mark>grep</mark> command is:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grep <span class="o">[</span>OPTIONS<span class="o">]</span> pattern <span class="o">[</span>files<span class="o">]</span>
+</span></span></code></pre></div><p>Useful options of the <mark>grep</mark> command are:</p>
+<ul>
+<li><strong>-i</strong>: ignores, case for matching</li>
+<li><strong>-c</strong>: this prints only a count of the lines that match a pattern.</li>
+</ul>
+<p>As an example let&rsquo;s use the 01_file1.txt we modified earlier, and let&rsquo;s &ldquo;grep&rdquo; the word &ldquo;stai&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; grep -i stai 01_mydir/01_file1.txt 
+</span></span><span class="line"><span class="cl">Come stai?
+</span></span></code></pre></div><p>This command will show the entire line where that word (pattern) appears in the file.</p>
+<h2 id="io-redirection">I/O redirection</h2>
+<p>In Linux standard inputs and outputs (I/O) are distributed across 3 streams:</p>
+<ol>
+<li>Standard input - <strong>stdin</strong> numbered as 0.</li>
+<li>Standard output - <strong>stdout</strong> numbered 1.</li>
+<li>Standard error - <strong>stderr</strong> numbered 2.</li>
+</ol>
+<p>During standard interactions between the user and the terminal, standard input comes from the user’s keyboard. Standard output and standard error are displayed on the user’s terminal as text. Stdin, stdout, and stderr are referred to as the standard streams. Let&rsquo;s try to pass the percentage sign (%) to the <mark> ls </mark> command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls %
+</span></span><span class="line"><span class="cl">ls: %: No such file or directory
+</span></span></code></pre></div><h4 id="stream-redirection">Stream redirection</h4>
+<p>Linux includes commands to <strong>redirect</strong> each stream:</p>
+<ul>
+<li><strong>&gt;</strong> - redirect standard output.</li>
+<li><strong>&lt;</strong> - redirect standard input.</li>
+<li><strong>2&gt;</strong> - redirect standard error.</li>
+</ul>
+<p>To give an example on how to redirect a stream, we are going to perform the following steps:</p>
+<ol>
+<li>First use the command <mark>echo</mark> to print something on the terminal:</li>
+</ol>
+<pre tabindex="0"><code>francesco@rafaela : (Desktop) -&gt; echo Ciao Francesco!
+Ciao Francesco!
+</code></pre><ol start="2">
+<li>In the previous step &ldquo;Ciao Francesco!&rdquo; is the standard output of the <mark>echo</mark> command. We are now going to redirect the standard output to a new .txt file called greetings.txt:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; <span class="nb">echo</span> Ciao Francesco! &gt; greetings.txt
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">01_mydir      greetings.txt
+</span></span></code></pre></div><ol start="3">
+<li>The <mark>echo</mark> command of the previous step has generated no output on screen because we have redirected to the greetings.txt file. Therefore, by running the <mark>ls</mark> command we now see a new file in the working directory, as expected. Let&rsquo;s use the <mark>cat</mark> command to see its content:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; cat greetings.txt 
+</span></span><span class="line"><span class="cl">Ciao Francesco!
+</span></span></code></pre></div><ol start="4">
+<li>The file greetings.txt now contains the output of the <mark>echo</mark> command.</li>
+</ol>
+<h4 id="streams-redirection---append">Streams redirection - append</h4>
+<p>Linux includes commands to redirect each stream without OVERWRITING:</p>
+<ul>
+<li><strong>&raquo;</strong> - redirect standard output.</li>
+<li><strong>&laquo;</strong> - redirect standard input.</li>
+<li><strong>2&raquo;</strong> - redirect standard error.</li>
+</ul>
+<p>As an example, let&rsquo;s try to &ldquo;append&rdquo; the sentence &ldquo;Come stai?&rdquo; to the already created greetings.txt file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; <span class="nb">echo</span> Come stai? &gt;&gt; greetings.txt 
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; cat greetings.txt 
+</span></span><span class="line"><span class="cl">Ciao Francesco!
+</span></span><span class="line"><span class="cl">Come stai?
+</span></span></code></pre></div><p>As expected, the stream redirection DID NOT overwrite the file content.</p>
+<h4 id="pipes-in-linux">Pipes in Linux</h4>
+<p>Pipes are used in Linux to redirect a stream from one program to another. When a program&rsquo;s standard output is sent to another through a pipe, the first program&rsquo;s output will be used as input to the second, rather than being printed on terminal. The syntax for a pipe is the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">command1 <span class="p">|</span> command2
+</span></span></code></pre></div><p>If the output of the <mark>ls</mark> command is a list of the directory content, what would be the output of the following line:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls
+</span></span><span class="line"><span class="cl">01_mydir      greetings.txt
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls <span class="p">|</span> less
+</span></span></code></pre></div><p><span style="color:red"> TRY IT OUT! </span></p>
+<h2 id="bash-scripting">Bash scripting</h2>
+<p>Essentially anything you type in the command line can be put in a <strong>bash script</strong>. A bash script is nothing but a recipe that tells the shell what command to execute and in what order. The two main reasons you might want to learn more about BASH scripting are: <strong>efficiency</strong> and <strong>productivity</strong>.</p>
+<h4 id="the-shebang">The SHEBANG</h4>
+<p>There are a couple of important rules we need to keep in mind when creating BASH scripts:</p>
+<ol>
+<li>BASH scripts always begin with a <strong>shebang</strong> <mark> #!/bin/bash </mark>. The shebang is simply an absolute path to the BASH interpreter.</li>
+<li>By convention, BASH scripts have a .sh extension.</li>
+</ol>
+<h4 id="my-first-bash-script">My first BASH script</h4>
+<p>Using the commands we have learned so far, let&rsquo;s create our first bash script:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;#!/bin/bash&#39;</span> &gt; my_script.sh
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;echo Ciao, Francesco!&#39;</span> &gt;&gt; my_script.sh
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;echo Come stai?&#39;</span> &gt;&gt; my_script.sh 
+</span></span></code></pre></div><p>The result should be the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; cat my_script.sh 
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> Ciao, Francesco!
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> Come stai?
+</span></span></code></pre></div><p>Our first BASH script is now ready to be run, and the expected result should be &ldquo;Ciao, Francesco! Come stai?&rdquo; printed on the terminal. The syntax to run a BASH script from terminal is the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ./my_script.sh 
+</span></span><span class="line"><span class="cl">-bash: ./my_script.sh: Permission denied
+</span></span></code></pre></div><p>BASH gaves us an error! The reason for it is because my_script.sh is a file that (as of now) cannot be executed (remember what a program is!). We do not have permission to execute the file. Here it come another EXTREMELY useful command &hellip;</p>
+<h4 id="the-chmod-command">The CHMOD command</h4>
+<p>In Linux the <mark>chmod</mark> command stands for &ldquo;change mode&rdquo; and it is used to change the access mode of a file. Permissions have three categories: read, write, and execute respectively represented by &ldquo;r&rdquo;, &ldquo;w&rdquo; and &ldquo;x&rdquo;. The syntax to change the mode of a file is:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>mode<span class="o">]</span> filename
+</span></span></code></pre></div><p>To apply what we have learned to the previous example, let&rsquo;s first check the current permissions on my_script.sh. We will then change its permissions to add executable:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls -l my_script.sh 
+</span></span><span class="line"><span class="cl">-rw-r--r--  <span class="m">1</span> francesco  staff  <span class="m">50</span> Apr <span class="m">1</span> 21:41 my_script.sh
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; chmod +x my_script.sh 
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>Desktop<span class="o">)</span> -&gt; ls -l my_script.sh 
+</span></span><span class="line"><span class="cl">-rwxr-xr-x  <span class="m">1</span> francesco  staff  <span class="m">50</span> Apr <span class="m">15</span> 21:41 my_script.sh
+</span></span></code></pre></div><p>We should notice that now the my_script.sh file is indeed executable, and one way you can tell is that it changed color in the terminal. We can now run our first BASH script (for real):</p>
+<pre tabindex="0"><code>francesco@rafaela : (Desktop) -&gt; ./my_script.sh 
+Ciao, Francesco!
+Come stai?
+</code></pre><h2 id="conclusion">Conclusion</h2>
+<p>CONGRATULATIONS! You have made it through the entire course. You have have now all the necessary information to unleash your potential and become a <strong>command line master</strong>. I hope this course was useful to you, if you have any feedback or know of ways to make this short course better, please reach out to me.</p>
+<p>CIAO CIAO</p>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/previous/">previous</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Apr 1, 2025</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Francesco Ambrogi.
+  </p>
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.3239609ca7abe02ed52d76ffcb22af1d.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>

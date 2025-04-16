@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction to Command Line Interface | Dr. Ambrogi</title>
+    <link>https://FrancescoAmbrogi.github.io/courses/my-cli-course/</link>
+      <atom:link href="https://FrancescoAmbrogi.github.io/courses/my-cli-course/index.xml" rel="self" type="application/rss+xml" />
+    <description>Introduction to Command Line Interface</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://FrancescoAmbrogi.github.io/courses/my-cli-course/featured.png</url>
+      <title>Introduction to Command Line Interface</title>
+      <link>https://FrancescoAmbrogi.github.io/courses/my-cli-course/</link>
+    </image>
+    
+  </channel>
+</rss>
