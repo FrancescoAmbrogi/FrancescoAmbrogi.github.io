@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Courses | Dr. Ambrogi</title>
-    <link>https://FrancescoAmbrogi.github.io/courses/</link>
-      <atom:link href="https://FrancescoAmbrogi.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
-    <description>Courses</description>
+    <title>Boundary layer theory | Dr. Ambrogi</title>
+    <link>https://FrancescoAmbrogi.github.io/courses/my-blayer-course/</link>
+      <atom:link href="https://FrancescoAmbrogi.github.io/courses/my-blayer-course/index.xml" rel="self" type="application/rss+xml" />
+    <description>Boundary layer theory</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://FrancescoAmbrogi.github.io/media/icon_hu6f17802a8753f91cf448893ebab15783_26243_512x512_fill_lanczos_center_3.png</url>
-      <title>Courses</title>
-      <link>https://FrancescoAmbrogi.github.io/courses/</link>
+      <title>Boundary layer theory</title>
+      <link>https://FrancescoAmbrogi.github.io/courses/my-blayer-course/</link>
     </image>
     
   </channel>
