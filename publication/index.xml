@@ -5,7 +5,7 @@
     <link>https://FrancescoAmbrogi.github.io/publication/</link>
       <atom:link href="https://FrancescoAmbrogi.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://FrancescoAmbrogi.github.io/media/icon_hu6f17802a8753f91cf448893ebab15783_26243_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,9 +13,9 @@
     </image>
     
     <item>
-      <title>ARC4CFD: Learning how to leverage High-Performance Computing with Computational Fluid Dynamics (in review)</title>
+      <title>ARC4CFD: Learning how to leverage High-Performance Computing with Computational Fluid Dynamics</title>
       <link>https://FrancescoAmbrogi.github.io/publication/ha_jose_24/</link>
-      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://FrancescoAmbrogi.github.io/publication/ha_jose_24/</guid>
       <description></description>
     </item>
