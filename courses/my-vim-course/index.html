@@ -859,12 +859,19 @@
       <nav id="TableOfContents">
   <ul>
     <li><a href="#what-is-vim">What is Vim?</a></li>
-    <li><a href="#instructor">Instructor</a></li>
     <li><a href="#why-you-should-use-vim">Why you should use Vim?</a></li>
     <li><a href="#quitting-vim-not-an-intuitive-task">Quitting Vim, not an intuitive task</a></li>
     <li><a href="#give-vim-a-new-look">Give Vim a new look</a></li>
     <li><a href="#four-vim-modes">Four VIM modes</a></li>
     <li><a href="#the-5-basics-vim-commands-to-get-by">The 5 basics Vim commands to get by</a></li>
+    <li><a href="#vim-plugins-is-this-magic">Vim plugins (is this magic?)</a>
+      <ul>
+        <li><a href="#setting-up-plug-ins">Setting up plug-ins</a></li>
+        <li><a href="#use-vimplug-to-install-plugins">Use vim.plug to install plugins</a></li>
+        <li><a href="#my-3-must-have-plugins">My 3 must have plugins</a></li>
+        <li><a href="#example">Example</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -914,27 +921,32 @@
   <nav id="TableOfContents">
   <ul>
     <li><a href="#what-is-vim">What is Vim?</a></li>
-    <li><a href="#instructor">Instructor</a></li>
     <li><a href="#why-you-should-use-vim">Why you should use Vim?</a></li>
     <li><a href="#quitting-vim-not-an-intuitive-task">Quitting Vim, not an intuitive task</a></li>
     <li><a href="#give-vim-a-new-look">Give Vim a new look</a></li>
     <li><a href="#four-vim-modes">Four VIM modes</a></li>
     <li><a href="#the-5-basics-vim-commands-to-get-by">The 5 basics Vim commands to get by</a></li>
+    <li><a href="#vim-plugins-is-this-magic">Vim plugins (is this magic?)</a>
+      <ul>
+        <li><a href="#setting-up-plug-ins">Setting up plug-ins</a></li>
+        <li><a href="#use-vimplug-to-install-plugins">Use vim.plug to install plugins</a></li>
+        <li><a href="#my-3-must-have-plugins">My 3 must have plugins</a></li>
+        <li><a href="#example">Example</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </details>
 
 <h2 id="what-is-vim">What is Vim?</h2>
 <p>Vim (<strong>Vi</strong> <strong>IM</strong>proved) is a completely free, open-source, screen-based text editor developed by <a href="https://en.wikipedia.org/wiki/Bram_Moolenaar" target="_blank" rel="noopener">Bram Moolenaar</a>.</p>
-<h2 id="instructor">Instructor</h2>
-<a href="">Dr. Ambrogi Francesco</a>
 <h2 id="why-you-should-use-vim">Why you should use Vim?</h2>
 <p>If you work/study in computational science, chances are you will need to perform numerical simulations on large super-computers by accessing them through <strong>S</strong>ecure <strong>SH</strong>ell connection. Most clusters use Linux as the main operating system and once you are connected to the cluster you will quickly realize that:</p>
 <ol>
 <li>There is NO graphic interface (in most cases), and all you will see is a terminal window.</li>
 <li>You will not be able to use your favourite text editor in graphic mode.</li>
 </ol>
-<p>Do not dispair! Vim is here to save your life. Vim is, by default, present in almost all Linux distributions. Type <mark>vim</mark> on your command line, and this is the output you should see:</p>
+<p>Do not dispair! Vim is here to save your life. Vim is, by default, present in almost all Linux distributions. Type <mark>vim</mark> on your command line, and this is the output you should see (the version will depend on your system characteristics):</p>
 <p>
 
 
@@ -1008,13 +1020,13 @@
 <p>Much better, right?? We have now highlighted syntax for different programming languages, we have line numbers, automatic indentation, and it underlines where you currently are with the cursor (which in Vim is pretty crucial). So how do you make these changes in Vim? Again, this is not intuitive. There is no dropdown settings menu where you can edit all the perks.</p>
 <p>At start-up vim automatically reads a config file called <mark>vimrc</mark>. This is the equivalent of your <mark>bashrc</mark> file for your terminal. If you just installed Vim or if you are a brand new user, chances are you do not have this file, so the first thing to do is to create the file at home: <mark>touch ~/.vimrc</mark></p>
 <p>Inside this file you can now put all your precious settings to make Vim look very fancy, probably even better than mine. Here is a selection of settings which I believe will be useful for any Vim user:</p>
-<pre tabindex="0"><code>set nocompatible
-filetype on
-filetype indent on
-syntax on
-set number
-set cursorline
-</code></pre><p>From top to bottom: <strong>nocompatible</strong> fixes compatibility problems between Vi and Vim, <strong>filetype on</strong> makes sure Vim recognizes the file by the extension and syntax, <strong>indent on</strong> follows indentation rules set by the given programming language, <strong>syntax on</strong> highlights keywords and functions based on the given programming language, <strong>set number</strong> put the line number on the left side, and <strong>set cursorline</strong> underlines the location where the cursor is.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="nx">set</span> <span class="nx">nocompatible</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">filetype</span> <span class="nx">on</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">filetype</span> <span class="nx">indent</span> <span class="nx">on</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">syntax</span> <span class="nx">on</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">set</span> <span class="nx">number</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">set</span> <span class="nx">cursorline</span><span class="err">
+</span></span></span></code></pre></div><p>From top to bottom: <strong>nocompatible</strong> fixes compatibility problems between Vi and Vim, <strong>filetype on</strong> makes sure Vim recognizes the file by the extension and syntax, <strong>indent on</strong> follows indentation rules set by the given programming language, <strong>syntax on</strong> highlights keywords and functions based on the given programming language, <strong>set number</strong> put the line number on the left side, and <strong>set cursorline</strong> underlines the location where the cursor is.</p>
 <h2 id="four-vim-modes">Four VIM modes</h2>
 <p>The most important thing to realize as soon as Vim starts up is understand in what <strong>mode</strong> is working. There are <strong>4 MAIN</strong> modes:</p>
 <ol>
@@ -1069,11 +1081,11 @@ set cursorline
   </div></figure>
 </p>
 <p>In this case the status bar tells me that: I am in <strong>insert mode</strong>, and I am modifying the file named <strong>test.md</strong> located in <strong>~/Desktop/</strong>, and finally that the file is of type markdown. To setup the status bar like I did, here are the changes that must be included in the ~/.vimrc file:</p>
-<pre tabindex="0"><code>set statusline=
-set statusline+=\ %F\ %M\ %Y\ %R
-set statusline+=%=
-set laststatus=2 
-</code></pre><h2 id="the-5-basics-vim-commands-to-get-by">The 5 basics Vim commands to get by</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="nx">set</span> <span class="nx">statusline</span><span class="p">=</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">set</span> <span class="nx">statusline</span><span class="p">+=</span>\ %<span class="nx">F</span>\ %<span class="nx">M</span>\ %<span class="nx">Y</span>\ %<span class="nx">R</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">set</span> <span class="nx">statusline</span><span class="p">+=</span>%<span class="p">=</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">set</span> <span class="nx">laststatus</span><span class="p">=</span><span class="m">2</span> <span class="err">
+</span></span></span></code></pre></div><h2 id="the-5-basics-vim-commands-to-get-by">The 5 basics Vim commands to get by</h2>
 <p>Here are (in my opinion) the 5 basic commands to use Vim on a daily basis as a beginner.</p>
 <ol>
 <li>
@@ -1092,10 +1104,133 @@ set laststatus=2
 <p><u>The search command</u>: there are a few ways in which you can <strong>search</strong> in Vim. If you activated the line number, you can go directly to a specified line number <mark>#</mark> by typing<mark>:#</mark> and <mark>ENTER</mark>. You can also perform a word search by typing <mark>/</mark> followed by the word you are searching for. If you press <mark>ENTER</mark> Vim will go to the word you searched that is below and closest to the cursor. At that point if you type <mark>n</mark> repeatedly Vim will jump to every location in the code where that word appears. When you reach the bottom of the code Vim will pop a message in the status bar &ldquo;search hit BOTTOM, continuing at TOP&rdquo; and will move to the top of the file. By default, search words are not highlighted and the search is case sensitive, if you want to highlight the word and ignore the upper or lower case letters here are the changes you need to add to the <mark>~/.vimrc</mark> file:</p>
 </li>
 </ol>
-<pre tabindex="0"><code>set incsearch
-set ignorecase
-set hlsearch
-</code></pre><p>This is FAR beyond a complete course on Vim text editor, but just a quick showcase of useful commands that may spark your curiosity to use this wonderful tool. Keep checking as I will add more sections soon &hellip;</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="nx">set</span> <span class="nx">incsearch</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">set</span> <span class="nx">ignorecase</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">set</span> <span class="nx">hlsearch</span><span class="err">
+</span></span></span></code></pre></div><h2 id="vim-plugins-is-this-magic">Vim plugins (is this magic?)</h2>
+<p>As I mentioned in the beginning Vim is an EXTREMELY powerful editor, plugins are the heart of its beauty. You can customize your Vim editor based on your typical workflow by installing plugins. Below I will give you <strong>ONE</strong> of the ways to install plugins in Vim, and I will provide a list of very useful (in my opinion) plugins to install. Buckle up!</p>
+<h3 id="setting-up-plug-ins">Setting up plug-ins</h3>
+<p>In order to set up plugins in Vim we are going to need the <mark>curl</mark> command. First order of business is therefore to check if we have the <mark>curl</mark> command installed in our system by typying:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>~<span class="o">)</span> -&gt; which curl
+</span></span><span class="line"><span class="cl">/usr/bin/curl
+</span></span><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>~<span class="o">)</span> -&gt;
+</span></span></code></pre></div><p>If the output of <mark>which</mark> is &ldquo;similar&rdquo; to what you see above, you are all set to continue and unleash the power of vim plugins!</p>
+<h3 id="use-vimplug-to-install-plugins">Use vim.plug to install plugins</h3>
+<p>There are many possibilities to install plugins in Vim, but I believe vim.plug is probably one of the most straight forward. Carefully follow these steps:</p>
+<p>First, we are going to create a <mark>~/.vimrc.plug</mark> file in our home directory. Very similar to <mark>~/.vimrc</mark>, this file will contain ALL installed plug-ins.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>~<span class="o">)</span> -&gt; touch ~/.vimrc.plug
+</span></span></code></pre></div><p>We are now going to create a hidden directory <mark>.vim/plug</mark> in our home. Recall that hidden directories and files in unix based systems start with a &ldquo;dot&rdquo;. We will also use the <mark>-p</mark> option to create the parent directory as well.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">francesco@rafaela : <span class="o">(</span>~<span class="o">)</span> -&gt; mkdir -p ~/.vim/plug
+</span></span></code></pre></div><p>We now have to tell vim to &ldquo;source&rdquo; the <mark>~/.vimrc.plug</mark> file at each startup. To do so we will add the following code at the bottom of the <mark>~/.vimrc</mark> file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="c">&#34; Call the vimrc.plug file</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">if</span> <span class="nx">filereadable</span><span class="p">(</span><span class="nx">expand</span><span class="p">(</span><span class="s2">&#34;~/.vimrc.plug&#34;</span><span class="p">))</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    <span class="nx">source</span> <span class="p">~</span>/.<span class="nx">vimrc</span>.<span class="nx">plug</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">endif</span><span class="err">
+</span></span></span></code></pre></div><p>The last step in this module is to install vim.plug itself. We will do so with the <mark>curl</mark> command as mentioned above.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</span></span></code></pre></div><p>When this is done, you should be all set to navigate the web and install whatever vim plugin will makre your workflow more efficient. Below, I will show you my 3 <strong>must have</strong> vim plugins.</p>
+<h3 id="my-3-must-have-plugins">My 3 must have plugins</h3>
+<p>The three plugins I will present are:</p>
+<ol>
+<li>
+<p><a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="noopener"><strong>Fugitive</strong></a>: the main feature of Fugitive is :Git (or just :G), which calls any arbitrary Git command. If you know how to use Git at the command line, you know how to use :Git. It&rsquo;s vaguely akin to :!git but with numerous improvements.</p>
+</li>
+<li>
+<p><a href="https://github.com/preservim/nerdtree" target="_blank" rel="noopener"><strong>NERD Tree</strong></a>: the NERDTree is a file system explorer for the Vim editor. Using this plugin, users can visually browse complex directory hierarchies, quickly open files for reading or editing, and perform basic file system operations.</p>
+</li>
+<li>
+<p><a href="https://github.com/lervag/vimtex" target="_blank" rel="noopener"><strong>VimTex</strong></a>: VimTeX is a modern Vim and Neovim filetype and syntax plugin for LaTeX files.</p>
+</li>
+</ol>
+<p>To install these plugins we are going to open the previously created <mark>~/.vimrc.plug</mark> file and type the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="nx">call</span> <span class="nx">plug</span>#<span class="nx">begin</span><span class="p">(</span><span class="s1">&#39;~/.vim/plugged&#39;</span><span class="p">)</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c">
+</span></span></span><span class="line"><span class="cl"><span class="c">&#34; Fugitive plugin</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">Plug</span> <span class="s1">&#39;tpope/vim-fugitive&#39;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c">
+</span></span></span><span class="line"><span class="cl"><span class="c">&#34; NERD tree plugin</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">Plug</span> <span class="s1">&#39;preservim/nerdtree&#39;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c">
+</span></span></span><span class="line"><span class="cl"><span class="c">&#34; VimTex plugin</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">Plug</span> <span class="s1">&#39;lervag/vimtex&#39;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nx">call</span> <span class="nx">plug</span>#<span class="nx">end</span><span class="p">()</span><span class="err">
+</span></span></span></code></pre></div><p>The VERY LAST step is to open up vim, press <mark> : </mark> to go in <strong>command line</strong> mode and type <mark>PlugInstall</mark> and hit ENTER (see figure below):</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="./vim-plug.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The output of this command should look something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="nx">Updated</span>. <span class="nx">Elapsed</span> <span class="nx">time</span>: <span class="m">1</span>.<span class="m">457243</span> <span class="nx">sec</span>.                                                        <span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>[<span class="p">===</span>] <span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="p">-</span> <span class="nx">Finishing</span> ... <span class="nx">Done</span><span class="p">!</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="p">-</span> <span class="nx">vimtex</span>: <span class="nx">Already</span> <span class="nx">up</span> <span class="nx">to</span> <span class="nx">date</span>.<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="p">-</span> <span class="nx">vim</span><span class="p">-</span><span class="nx">fugitive</span>: <span class="nx">Already</span> <span class="nx">installed</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="p">-</span> <span class="nx">nerdtree</span>: <span class="nx">Already</span> <span class="nx">up</span> <span class="nx">to</span> <span class="nx">date</span>.<span class="err">
+</span></span></span></code></pre></div><p>And the MAGIC IS DONE!</p>
+<h3 id="example">Example</h3>
+<p>I will let you explore the different plugins we have installed by yourself, but I will  show you an example on how to use <strong>NERD Tree</strong>. Let&rsquo;s open a random file using Vim (I will use a file from one of my <a href="https://francescoambrogi.github.io/courses/my-cli-course/" target="_blank" rel="noopener">intro to command line course</a>). After the file is opened in vim, enter <strong>command line</strong> mode (you should know how to do it by now) and type <mark>NERDTree</mark>. What you should see is something like this:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="./nerdtree.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The file is still open on the right side, but you have a BEAUTIFUL side bar showing all files in the current directory. You can navigate the side bar menu with your mouse or with the keyboard, check files and directories, and even open more than one file at once. If you type <mark> ? </mark> you will have an entire list of possible commands for NERDTree.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="./nerdtree2.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>This is FAR beyond a complete course on Vim text editor, but just a quick showcase of useful commands that may spark your curiosity to use this wonderful tool. Keep checking as I will add more sections soon &hellip;</p>
 
           </div>
 
